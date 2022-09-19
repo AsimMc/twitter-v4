@@ -8,7 +8,7 @@ import {useRouter} from "next/router";
 import { useEffect, useState } from 'react';
 import { collection, doc, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { db } from '../../firebase';
-import Comment from '../../components/comment';
+import Comment from '../../components/Comment';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export default function PostPage({newsResults}) {
