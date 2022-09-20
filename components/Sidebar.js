@@ -13,7 +13,7 @@ export default function Sidebar() {
     {/* Twitter Logo */}
 
     <div className="hoverEffect p-0 hover:bg-blue-100 xl:px-1">
-        <Image width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/1153px-Rutgers_Scarlet_Knights_logo.svg.png" text="BettyShare"></Image>
+        <Image width="60" height="60" src="https://www.shareicon.net/data/512x512/2016/10/20/846435_letter_512x512.png" text="BettyShare"></Image>
     </div>
 
     {/* Menu */}
