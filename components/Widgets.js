@@ -16,7 +16,7 @@ export default function Widgets({newsResults}) {
             </div>
         </div>
 
-        {/* <div className="text-gray-700 space-y-3 bg-gray-100 rounded-xl pt-2 w-[90%] xl:w-[75%]">
+        <div className="text-gray-700 space-y-3 bg-gray-100 rounded-xl pt-2 w-[90%] xl:w-[75%]">
             <h4 className="font-bold text-xl px-4">Whats happening</h4>
         <AnimatePresence>
         {newsResults.slice(0,articleNum).map((article)=>(
@@ -26,8 +26,8 @@ export default function Widgets({newsResults}) {
         ))}
         </AnimatePresence>
         <button onClick={()=>setArticleNum(articleNum + 3)} className="text-rose-300 pl-4 pb-3 hover:text-rose-400">Show more</button>
-        </div> */}
-        <div className="text-gray-700 space-y-3 bg-gray-100 pt-2 rounded-xl w-[90%] xl:w-[75%]">
+        </div>
+        {/* <div className="text-gray-700 space-y-3 bg-gray-100 pt-2 rounded-xl w-[90%] xl:w-[75%]">
           <h4 className="font-bold text-xl px-4">Capacity</h4>
           <div class="container">
             <div class="circular-progress">
@@ -45,6 +45,7 @@ export default function Widgets({newsResults}) {
           </div>
           <button className="text-blue-300 pl-4 pb-3 hover:textblue-400">Show More</button>
         </div>
+    </div> */}
     </div>
   )
 }
