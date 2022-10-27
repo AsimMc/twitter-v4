@@ -41,7 +41,7 @@ export default function Widgets({newsResults}) {
             <div class="circular-progress">
               <span className="progress-value">0%</span>
             </div>
-            <span className="text">Huey's Knight Club</span>
+            <span className="text">Huey&apos;s Knight Club</span>
           </div>
         </div>
     </div>
