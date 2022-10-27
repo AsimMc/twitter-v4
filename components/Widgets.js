@@ -2,7 +2,6 @@ import { SearchIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import News from "./News";
 import { AnimatePresence, motion } from "framer-motion"; 
-import '../pages/_app';
 import dynamic from 'next/dynamic'
 
 
