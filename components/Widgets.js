@@ -43,7 +43,6 @@ export default function Widgets({newsResults}) {
             </div>
             <span className="text">Huey's Knight Club</span>
           </div>
-          <button className="text-blue-300 pl-4 pb-3 hover:textblue-400">Show More</button>
         </div>
     </div>
   )
