@@ -3,10 +3,28 @@ import { useState } from "react";
 import News from "./News";
 import { AnimatePresence, motion } from "framer-motion"; 
 import dynamic from 'next/dynamic'
+import {useEffect} from "react";
+
 
 
 export default function Widgets({newsResults}) {
   const[articleNum, setArticleNum] = useState(3);
+  const[progressValue, setProgressValue] = useState(0);
+
+let progressEndValue = 28,
+  progressStartValue = 0,
+  speed = 40;
+useEffect(() => {
+  const progress = setInterval(() =>{
+    if(progressEndValue > progressStartValue){
+      progressStartValue++;
+      setProgressValue(progressStartValue);
+    }
+    else{
+      clearInterval(progress);
+    }
+  }, speed);
+}, []);
   return (
     <div className="xl:w-[600px] lg:inline ml-8 space-y-5">
         <div className="w-[90%] xl:w-[75%] sticky top-0 bg-white py-1.5 z-50">
@@ -29,17 +47,17 @@ export default function Widgets({newsResults}) {
         </div> */}
         <div className="text-gray-700 space-y-3 bg-gray-100 pt-2 rounded-xl w-[90%] xl:w-[75%]">
           <h4 className="font-bold text-xl px-4">Capacity</h4>
-          <div class="container">
-            <div class="circular-progress">
-            <span class="progress-value">0%</span>
+          <div className="container">
+            <div className="circular-progress" style={{background: `conic-gradient(#E0115F ${progressValue * 3.6}deg, #ededed 0deg)`}}>
+            <span className="progress-value">{progressValue}%</span>
             </div>
             <span className="text">Olde Queens</span>
-              <div class="circular-progress">
-              <span className="progress-value">0%</span>
+              <div className="circular-progress" style={{background: `conic-gradient(#E0115F ${progressValue * 3.6}deg, #ededed 0deg)`}}>
+              <span className="progress-value">{progressValue}%</span>
             </div>
-            <span className="text">Golden Rail</span>
-            <div class="circular-progress">
-              <span className="progress-value">0%</span>
+            <span className="text1">Golden Rail</span>
+            <div className="circular-progress1" style={{background: `conic-gradient(#E0115F ${progressValue * 3.6}deg, #ededed 0deg)`}}>
+              <span className="progress-value1">{progressValue}%</span>
             </div>
             <span className="text">Huey&apos;s Knight Club</span>
             <button className="text-rose-300 pl-4 pb-3 hover:text-rose-400">Show more</button>
@@ -48,5 +66,10 @@ export default function Widgets({newsResults}) {
     </div>
   )
 }
+
+
+
+
+
 
 
