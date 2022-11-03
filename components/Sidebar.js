@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import SidebarMenuItem from './SidebarMenuItem';
-import {HomeIcon} from '@heroicons/react/solid';
+import {CreditCardIcon, HomeIcon, TrendingUpIcon} from '@heroicons/react/solid';
 import {HashtagIcon, ClipboardIcon, UserIcon, DotsCircleHorizontalIcon} from '@heroicons/react/outline';
 import {BellIcon, InboxIcon, BookmarkIcon, DotsHorizontalIcon} from '@heroicons/react/outline'
 import {useSession, signIn, signOut} from "next-auth/react"
@@ -23,9 +23,11 @@ export default function Sidebar() {
         <SidebarMenuItem text="Explore" Icon={HashtagIcon}/>
         {session && (
         <>
+        <SidebarMenuItem text="Skip a Line! (Coming)" Icon={TrendingUpIcon}/>
         <SidebarMenuItem text="Wait Times (Coming)" Icon={BellIcon}/>
         <SidebarMenuItem text="Messages (Coming)" Icon={InboxIcon}/>
         <SidebarMenuItem text="Promotions (Coming)" Icon={BookmarkIcon}/>
+        {/* <SidebarMenuItem text="Add Card (Coming)" Icon={CreditCardIcon}/> */}
         <SidebarMenuItem text="Profile (Coming)" Icon={UserIcon}/>
         <SidebarMenuItem text="More (Coming)" Icon={DotsCircleHorizontalIcon}/>
         </>
