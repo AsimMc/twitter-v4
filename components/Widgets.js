@@ -13,7 +13,7 @@ export default function Widgets({newsResults}) {
   const[progressValue2, setProgressValue2] = useState(0);
   const[progressValue3, setProgressValue3] = useState(0);
 
-  let progressEndValue1 = 33, progressEndValue2 = 29, progressEndValue3 = 43,
+  let progressEndValue1 = 94, progressEndValue2 = 91, progressEndValue3 = 90,
   progressStartValue1 = 0, progressStartValue2 = 0, progressStartValue3 = 0;
 
 useEffect(() => {
